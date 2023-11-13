@@ -145,7 +145,7 @@ namespace CRUD_file_accesso_diretto
         private void Recupera_Click(object sender, EventArgs e)
         {
             string[] riga = File.ReadAllLines("File.txt");
-            for (int i = 0; i < riga.Length; i++) 
+            for (int i = 0; i < riga.Length; i++)
             {
                 string[] a = riga[i].Split(';');
                 if (a[3] == "1" && a[0] == RecuperaTEXT.Text)
